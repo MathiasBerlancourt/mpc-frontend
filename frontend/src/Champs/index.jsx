@@ -39,7 +39,7 @@ const NoDataMessage = styled.p`
   color: #777;
 `;
 
-const GetChamps = ({ champsList }) => {
+const ChampionsCard = ({ champsList }) => {
   return (
     <div>
       {champsList ? (
@@ -47,7 +47,6 @@ const GetChamps = ({ champsList }) => {
           <ChampsWrapper key={index}>
             <ChampDescription>{champ.description}</ChampDescription>
             <WeightTitle>{champ.weight}</WeightTitle>
-
             <CompetitorInfo>
               <p>{champ.competitor.name}</p>
               <p>{champ.competitor.abbreviation}</p>
@@ -62,4 +61,4 @@ const GetChamps = ({ champsList }) => {
   );
 };
 
-export default GetChamps;
+export default ChampionsCard;

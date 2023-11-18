@@ -1,8 +1,8 @@
 import "./App.css";
-import GetOrgas from "./components/getOrgas";
+import Organisations from "./Organisations";
 
 function App() {
-  return <GetOrgas />;
+  return <Organisations />;
 }
 
 export default App;
